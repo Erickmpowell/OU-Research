@@ -1,0 +1,140 @@
+<VOTABLE version="1.3" xmlns="http://www.ivoa.net/xml/VOTable/v1.3">
+<RESOURCE type="results">
+<INFO name="QUERY_STATUS" value="OK"/>
+<INFO name="QUERY" value=""><![CDATA[SELECT * FROM user_epowell.r20170216csv
+WHERE parallax IS NOT NULL
+AND parallax>0
+AND parallax<1
+AND parallax_over_error IS NOT NULL AND abs(parallax_over_error)>5;]]></INFO>
+<INFO name="CAPTION" value=""><![CDATA[How to cite and acknowledge Gaia: http://gea.esac.esa.int/archive/documentation/credits.html]]></INFO>
+<INFO name="PAGE" value=""></INFO>
+<INFO name="PAGE_SIZE" value=""></INFO>
+<INFO name="JOBID" value="1529336436132O"><![CDATA[1529336436132O]]></INFO>
+<INFO name="JOBNAME" value=""><![CDATA[r20170216pc]]></INFO>
+<TABLE>
+<FIELD datatype="int" name="r20170216csv_oid">
+<DESCRIPTION>Object Identifier</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="dist"/>
+<FIELD datatype="long" name="solution_id"/>
+<FIELD arraysize="27" datatype="char" name="designation"/>
+<FIELD datatype="long" name="source_id"/>
+<FIELD datatype="int" name="random_index"/>
+<FIELD datatype="float" name="ref_epoch"/>
+<FIELD datatype="double" name="ra"/>
+<FIELD datatype="double" name="ra_error"/>
+<FIELD datatype="double" name="dec"/>
+<FIELD datatype="double" name="dec_error"/>
+<FIELD datatype="double" name="parallax"/>
+<FIELD datatype="double" name="parallax_error"/>
+<FIELD datatype="double" name="parallax_over_error"/>
+<FIELD datatype="double" name="pmra"/>
+<FIELD datatype="double" name="pmra_error"/>
+<FIELD datatype="double" name="pmdec"/>
+<FIELD datatype="double" name="pmdec_error"/>
+<FIELD datatype="double" name="ra_dec_corr"/>
+<FIELD datatype="double" name="ra_parallax_corr"/>
+<FIELD datatype="double" name="ra_pmra_corr"/>
+<FIELD datatype="double" name="ra_pmdec_corr"/>
+<FIELD datatype="double" name="dec_parallax_corr"/>
+<FIELD datatype="double" name="dec_pmra_corr"/>
+<FIELD datatype="double" name="dec_pmdec_corr"/>
+<FIELD datatype="double" name="parallax_pmra_corr"/>
+<FIELD datatype="double" name="parallax_pmdec_corr"/>
+<FIELD datatype="double" name="pmra_pmdec_corr"/>
+<FIELD datatype="short" name="astrometric_n_obs_al"/>
+<FIELD datatype="short" name="astrometric_n_obs_ac"/>
+<FIELD datatype="short" name="astrometric_n_good_obs_al"/>
+<FIELD datatype="short" name="astrometric_n_bad_obs_al"/>
+<FIELD datatype="double" name="astrometric_gof_al"/>
+<FIELD datatype="double" name="astrometric_chi2_al"/>
+<FIELD datatype="double" name="astrometric_excess_noise"/>
+<FIELD datatype="double" name="astrometric_excess_noise_sig"/>
+<FIELD datatype="short" name="astrometric_params_solved"/>
+<FIELD datatype="boolean" name="astrometric_primary_flag"/>
+<FIELD datatype="double" name="astrometric_weight_al"/>
+<FIELD datatype="double" name="astrometric_pseudo_colour"/>
+<FIELD datatype="double" name="astrometric_pseudo_colour_error"/>
+<FIELD datatype="double" name="mean_varpi_factor_al"/>
+<FIELD datatype="short" name="astrometric_matched_observations"/>
+<FIELD datatype="short" name="visibility_periods_used"/>
+<FIELD datatype="double" name="astrometric_sigma5d_max"/>
+<FIELD datatype="short" name="frame_rotator_object_type"/>
+<FIELD datatype="short" name="matched_observations"/>
+<FIELD datatype="boolean" name="duplicated_source"/>
+<FIELD datatype="short" name="phot_g_n_obs"/>
+<FIELD datatype="double" name="phot_g_mean_flux"/>
+<FIELD datatype="double" name="phot_g_mean_flux_error"/>
+<FIELD datatype="double" name="phot_g_mean_flux_over_error"/>
+<FIELD datatype="double" name="phot_g_mean_mag"/>
+<FIELD datatype="short" name="phot_bp_n_obs"/>
+<FIELD datatype="double" name="phot_bp_mean_flux"/>
+<FIELD datatype="double" name="phot_bp_mean_flux_error"/>
+<FIELD datatype="double" name="phot_bp_mean_flux_over_error"/>
+<FIELD datatype="double" name="phot_bp_mean_mag"/>
+<FIELD datatype="short" name="phot_rp_n_obs"/>
+<FIELD datatype="double" name="phot_rp_mean_flux"/>
+<FIELD datatype="double" name="phot_rp_mean_flux_error"/>
+<FIELD datatype="double" name="phot_rp_mean_flux_over_error"/>
+<FIELD datatype="double" name="phot_rp_mean_mag"/>
+<FIELD datatype="double" name="phot_bp_rp_excess_factor"/>
+<FIELD datatype="short" name="phot_proc_mode"/>
+<FIELD datatype="double" name="bp_rp"/>
+<FIELD datatype="double" name="bp_g"/>
+<FIELD datatype="double" name="g_rp"/>
+<FIELD datatype="boolean" name="radial_velocity"/>
+<FIELD datatype="boolean" name="radial_velocity_error"/>
+<FIELD datatype="short" name="rv_nb_transits"/>
+<FIELD datatype="boolean" name="rv_template_teff"/>
+<FIELD datatype="boolean" name="rv_template_logg"/>
+<FIELD datatype="boolean" name="rv_template_fe_h"/>
+<FIELD arraysize="13" datatype="char" name="phot_variable_flag"/>
+<FIELD datatype="double" name="l"/>
+<FIELD datatype="double" name="b"/>
+<FIELD datatype="double" name="ecl_lon"/>
+<FIELD datatype="double" name="ecl_lat"/>
+<FIELD datatype="boolean" name="priam_flags"/>
+<FIELD datatype="boolean" name="teff_val"/>
+<FIELD datatype="boolean" name="teff_percentile_lower"/>
+<FIELD datatype="boolean" name="teff_percentile_upper"/>
+<FIELD datatype="boolean" name="a_g_val"/>
+<FIELD datatype="boolean" name="a_g_percentile_lower"/>
+<FIELD datatype="boolean" name="a_g_percentile_upper"/>
+<FIELD datatype="boolean" name="e_bp_min_rp_val"/>
+<FIELD datatype="boolean" name="e_bp_min_rp_percentile_lower"/>
+<FIELD datatype="boolean" name="e_bp_min_rp_percentile_upper"/>
+<FIELD datatype="boolean" name="flame_flags"/>
+<FIELD datatype="boolean" name="radius_val"/>
+<FIELD datatype="boolean" name="radius_percentile_lower"/>
+<FIELD datatype="boolean" name="radius_percentile_upper"/>
+<FIELD datatype="boolean" name="lum_val"/>
+<FIELD datatype="boolean" name="lum_percentile_lower"/>
+<FIELD datatype="boolean" name="lum_percentile_upper"/>
+<FIELD arraysize="76" datatype="char" name="datalink_url"/>
+<FIELD datatype="boolean" name="epoch_photometry_url"/>
+<FIELD datatype="short" name="r20170216_oid"/>
+<FIELD datatype="double" name="col1"/>
+<FIELD datatype="double" name="col2"/>
+<DATA>
+<BINARY2>
+<STREAM encoding='base64'>
+AAAAAAAAAAANwf//QAAAAAE/ER1n3dcWFBazQAAAAAAAR2FpYSBEUjIgNTExMjE5
+MTMzOTMwODA0OTkyBxg3GABUFwAtlCG7RPvwAEA6tSPQ8QVFP7Bpuha1KwVATqHs
+q+ipqD+yg7jfrmb3P+ZPeDUhZVg/uaN2yEbEP0Ab2JuA+mZjv/6vzZirp9w/ulzc
+50LsTz/VWY3V/TKCP8IGyvzcGae/4w23eKexij/Jw88iPJXdv+Kxe9i+cpc/2mcv
+hFIJuL/KCn0GkOjGP9lYe+JOlDi/10Q3fO7pAb/FP7yDfnouP8fkZIONPcG/5D8X
+orP0jwHkAAAB4wABP8/XuqcFZ/RAflD0PpY9xQAAAAAAAAAAAAAAAAAAAAAAH0Y/
++loPQA7jyT/2YkzppM97P5BFJpko8v6/fEEXiJj8dwA3ABM/w7kXItxN9AAAADpG
+Af5AnK7QgQN9Vz/+eEbq3cSHQI4fkGJN0vJAMYdjXnQpngA2QIfpavAjCvFALK1R
+P2f/TEBKrr433pOfQDIkWP91loUANkCgBZSxX8D4QCkGRUy4YdBAZHzigkC3gEAw
+e2wFC9h7P/iLQqPpfrQAAD/6js/3I7hsP+Oes//3Rp4/8L92AeTcjiAgAAAgICBO
+T1RfQVZBSUxBQkxFQGAxSl6pKEG/7Jt1I1qDtkBJ7rroZ6mPQEb3p5RN4bEgICAg
+ICAgICAgICAgICAgIGh0dHA6Ly9nZWFkYXRhLmVzYWMuZXNhLmludC9kYXRhLXNl
+cnZlci9kYXRhbGluay9saW5rcz9JRD01MTEyMTkxMzM5MzA4MDQ5OTIgAA9AOrUs
+e4kNWkBOoe0ojOcE
+</STREAM>
+</BINARY2>
+</DATA>
+</TABLE>
+</RESOURCE>
+</VOTABLE>
